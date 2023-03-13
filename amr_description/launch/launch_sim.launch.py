@@ -36,6 +36,16 @@ def generate_launch_description():
                         arguments=['-topic', 'robot_description',
                                    '-entity', 'my_bot'],
                         output='screen')
+    
+    # RVIZ Configuration
+    rviz_config_dir = os.path.join(get_package_share_directory("amr_description"), 'config', 'drive_bot.rviz')
+    rviz_node = Node(
+            package='rviz2',
+            executable='rviz2',
+            output='screen',
+            name='rviz_node',
+            parameters=[{'use_sim_time': True}],
+            arguments=['-d', rviz_config_dir])
 
 
 
@@ -44,4 +54,5 @@ def generate_launch_description():
         urdf_visualize,
         gazebo,
         spawn_entity,
+        rviz_node,
     ])
