@@ -10,9 +10,9 @@
 		<material name="grey">
 			<color rgba="0.75 0.75 0.75 1.0" />
 		</material>
-		<material name="white">
+		<!-- <material name="white">
 			<color rgba="0.95 0.95 0.95 1.0" />
-		</material>
+		</material> -->
 		<material name="red">
 			<color rgba="0.95 0.0 0.0 1.0" />
 		</material>
@@ -34,9 +34,9 @@
 		<material name="violet">
 			<color rgba="0.6 0.0 1.0 1.0" />
 		</material>
-		<material name="black">
+		<!-- <material name="black">
 			<color rgba="0.0 0.0 0.0 1.0" />
-		</material>
+		</material> -->
 		<material name="darkolive">
 			<color rgba="0.3 0.3 0.25 1.0" />
 		</material>

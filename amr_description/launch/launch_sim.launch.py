@@ -48,11 +48,26 @@ def generate_launch_description():
             arguments=['-d', rviz_config_dir])
 
 
+    diff_drive_spawner = Node(
+    package="controller_manager",
+    executable="spawner",
+    arguments=["diff_cont"],
+    )
+
+    joint_broad_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_broad"],
+    )
+
+
 
     # Launch them all!
     return LaunchDescription([
         urdf_visualize,
         gazebo,
         spawn_entity,
-        rviz_node,
+        # rviz_node,
+        diff_drive_spawner,
+        joint_broad_spawner,
     ])

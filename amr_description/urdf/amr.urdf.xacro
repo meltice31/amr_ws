@@ -2,11 +2,18 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="amr">
 
     <xacro:include filename="amr_core.xacro"/>
-    <xacro:include filename="gazebo_control.xacro"/>
-    <!-- <xacro:include filename="lidar.xacro"/> -->
+    <!-- <xacro:include filename="gazebo_control.xacro"/> -->
+    <xacro:include filename="ros2_control.xacro"/>
+    <!-- Lidar -->
     <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
     <xacro:VLP-16 parent="chassis" name="lidar_frame" topic="/scan" organize_cloud="false" hz="10" samples="440"  max_range="3" gpu="true">
       <origin xyz="0.73 0 0.825" rpy="0 0 0" />
     </xacro:VLP-16>
-
+    <!-- ARM -->
+    <!-- <xacro:include filename="$(find tm_description)/xacro/tm5-900.urdf.xacro"/>
+    <joint name="chassis_base_link" type="fixed">
+      <parent link="chassis"/>
+      <child link="base"/>
+      <origin xyz="0.37 -0.14 0.69" rpy="0 0 ${pi/2}" />
+    </joint> -->
 </robot>
