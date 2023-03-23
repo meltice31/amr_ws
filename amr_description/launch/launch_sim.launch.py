@@ -22,7 +22,7 @@ def generate_launch_description():
     urdf_visualize = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','urdf_visualize.launch.py')]), 
-                    launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'true'}.items()
+                    launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'false'}.items()
     )
     
 
@@ -52,9 +52,9 @@ def generate_launch_description():
 
 
     diff_drive_spawner = Node(
-    package="controller_manager",
-    executable="spawner",
-    arguments=["diff_cont"],
+        package="controller_manager",
+        executable="spawner",
+        arguments=["diff_cont"],
     )
 
     joint_broad_spawner = Node(
@@ -70,7 +70,7 @@ def generate_launch_description():
         urdf_visualize,
         gazebo,
         spawn_entity,
-        rviz_node,
+        # rviz_node,
         diff_drive_spawner,
         joint_broad_spawner,
     ])

@@ -1,0 +1,36 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/tpc/tm_driver/install/tm_msgs/local/lib/python3.10/dist-packages",
+        "/home/tpc/tm_driver/build/tm_mod_urdf",
+        "/home/tpc/tm_driver/install/tm_mod_urdf/lib/python3.10/site-packages",
+        "/home/tpc/tm_driver/build/tm_get_status",
+        "/home/tpc/tm_driver/install/tm_get_status/lib/python3.10/site-packages",
+        "/home/tpc/tm_driver/install/techman_robot_msgs/local/lib/python3.10/dist-packages",
+        "/home/tpc/ws_moveit2/build/ros2controlcli",
+        "/home/tpc/ws_moveit2/install/ros2controlcli/lib/python3.10/site-packages",
+        "/home/tpc/ws_moveit2/install/controller_manager/local/lib/python3.10/dist-packages",
+        "/home/tpc/ws_moveit2/install/moveit_msgs/local/lib/python3.10/dist-packages",
+        "/home/tpc/ws_moveit2/build/moveit_configs_utils",
+        "/home/tpc/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages",
+        "/home/tpc/ws_moveit2/install/controller_manager_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/tpc/tm_driver/install/tm_msgs/local/lib/python3.10/dist-packages",
+        "/home/tpc/tm_driver/build/tm_mod_urdf",
+        "/home/tpc/tm_driver/install/tm_mod_urdf/lib/python3.10/site-packages",
+        "/home/tpc/tm_driver/build/tm_get_status",
+        "/home/tpc/tm_driver/install/tm_get_status/lib/python3.10/site-packages",
+        "/home/tpc/tm_driver/install/techman_robot_msgs/local/lib/python3.10/dist-packages",
+        "/home/tpc/ws_moveit2/build/ros2controlcli",
+        "/home/tpc/ws_moveit2/install/ros2controlcli/lib/python3.10/site-packages",
+        "/home/tpc/ws_moveit2/install/controller_manager/local/lib/python3.10/dist-packages",
+        "/home/tpc/ws_moveit2/install/moveit_msgs/local/lib/python3.10/dist-packages",
+        "/home/tpc/ws_moveit2/build/moveit_configs_utils",
+        "/home/tpc/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages",
+        "/home/tpc/ws_moveit2/install/controller_manager_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
